@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Babu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Ambient Background Elements -->
+    <div class="sky-background">
+        <div class="stars" id="stars-container"></div>
+        <div class="twinkling"></div>
+        <div class="moon"></div>
+        <div class="clouds"></div>
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <!-- Floating Audio Control -->
+    <button class="music-toggle" id="music-btn" aria-label="Toggle Music">
+        <span class="music-icon">&#9835;</span>
+        <audio id="bg-music" src="music.mp3" loop></audio>
+    </button>
+
+    <!-- Main Application Container -->
+    <main class="app-container">
+        
+        <!-- Section 1: Landing & Envelope View -->
+        <section class="view-section active" id="landing-section">
+            <div class="glass-card fade-in">
+                <div class="heart-icon heartbeat">&#x2764;&#xfe0f;</div>
+                <h1 class="main-title">Hi Babu...</h1>
+                <p class="subtitle">I made something special for you...</p>
+                <div class="heart-icon">&#x2764;&#xfe0f;</div>
+                
+                <!-- Interactive Envelope Component -->
+                <div class="envelope-wrapper" id="envelope-wrapper" role="button" tabindex="0" aria-label="Open letter">
+                    <div class="envelope">
+                        <div class="flap"></div>
+                        <div class="pocket"></div>
+                        <div class="letter">
+                            <div class="letter-preview"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Letter, Gallery, Counter & Surprise View -->
+        <section class="view-section hidden" id="content-section">
+            
+            <!-- The Romantic Letter Display -->
+            <div class="glass-card letter-card">
+                <div id="typewriter-container" class="typewriter-text"></div>
+            </div>
+
+            <!-- Premium Visual Gallery -->
+            <div class="glass-card gallery-card">
+                <h2 class="section-title">Our Moments</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="photo1.jpg" alt="Beautiful memory together" class="gallery-img">
+                        <div class="gallery-glow"></div>
+                    </div>
+                    <!-- Future layout expansion slot: Add more elements matching .gallery-item structure here -->
+                </div>
+            </div>
+
+            <!-- Counter Tracker Module -->
+            <div class="glass-card counter-card">
+                <h2 class="counter-title">&#x2764;&#xfe0f; We've Been Together For &#x2764;&#xfe0f;</h2>
+                <div class="timer-grid">
+                    <div class="time-block"><span id="years" class="time-num">00</span><span class="time-label">Years</span></div>
+                    <div class="time-block"><span id="months" class="time-num">00</span><span class="time-label">Months</span></div>
+                    <div class="time-block"><span id="days" class="time-num">00</span><span class="time-label">Days</span></div>
+                    <div class="time-block"><span id="hours" class="time-num">00</span><span class="time-label">Hours</span></div>
+                    <div class="time-block"><span id="minutes" class="time-num">00</span><span class="time-label">Minutes</span></div>
+                    <div class="time-block"><span id="seconds" class="time-num">00</span><span class="time-label">Seconds</span></div>
+                </div>
+            </div>
+
+            <!-- Call to Action Strategy Interfacing Surprise Layout -->
+            <div class="action-container">
+                <button class="surprise-btn pulse-glow" id="surprise-btn">
+                    I Have One More Surprise &#x2764;&#xfe0f;
+                </button>
+            </div>
+        </section>
+
+        <!-- Section 3: Final Cinematic Interstitial Overlay -->
+        <section class="view-section hidden" id="surprise-section">
+            <div class="infinity-display">
+                <div class="heart-icon heartbeat massive-heart">&#x2764;&#xfe0f;</div>
+                <h2 class="infinity-text">I Love You Infinity Babu</h2>
+                <div class="heart-icon heartbeat massive-heart">&#x2764;&#xfe0f;</div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
